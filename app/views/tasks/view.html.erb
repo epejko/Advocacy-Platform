@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            New Task
+        </title>
+    </head>
+    <body>
+        <h1>View Task</h1>
+        <p><%= @task.subject %></p>
+        <p><%= @task.category %></p>
+        <p><%= @task.points %></p>
+        <p><%= @task.author %></p>
+        <%= link_to 'Delete', task_path(@task), method: :delete %>
+    </body>
+</html>

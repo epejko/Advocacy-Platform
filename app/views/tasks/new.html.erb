@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            New Task
+        </title>
+    </head>
+    <body>
+        <h1>New Task</h1>
+        <%= form_for @task do |t| %>
+        
+            <%= t.label :subject, "Subject" %>
+            <%= t.text_field :subject %>
+            
+            <%= t.label :category, "Category" %>
+            <%= t.text_field :category %>
+            
+            <%= t.label :points, "Points" %>
+            <%= t.text_field :points %>
+            
+            <%= t.label :author, "Author"  %>
+            <%= t.text_field :author %>
+            
+            <%= t.submit "Submit Task" %>
+        <% end %>
+    </body>
+</html>
