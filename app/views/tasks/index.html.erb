@@ -1,46 +1,15 @@
-<!doctype html>
 <html>
   <head>
     <title>Tasks</title>
-  
   </head>
   <body>
-    <div class="jumbotron" id="header">
-      <div class="row">
-        <div class="col"><h4><a href="tasks">Home</a></h4></div>
-        <div class="col"><h1>Tasks Index</h1></div>
-        <div class="col"><h4><a href="tasks/new">Add a new task</a></h4></div>
-      </div>
-    </div>
+    <div class="main">
+      <div class="container">
+        <h1>Index</h1>
+        <p>This is where all tasks are listed</p>
     
-    <div class="jumbotron" id="main">
-      <div class="row">
-      <% count = 0 %>
-      <% @tasks.each do |t| %>
-      
-      <div class="col-sm-4" id="tasks-all">
-        <p id="subject"><b>Subject:</b> <%= t.subject %></p>
-        <p id="category"><b>Category:</b> <%= t.category %></p>
-        <p id="points"><b>Points:</b> <%= t.points %></p>
-        <p id="author"><b>Author:</b> <%= t.author %></p>
-        <%= link_to 'View Task', task_path(t) %>
-      </div>
-      <% count = count + 1 %>
-      <% if count % 3 == 0 then %>
-      <div class="w-100"></div>
-      <% end %>
-      <% end %>
-      </div>
-
-      
-    </div>
-    
-  </body>
-</html>
-
-<!--
-<table>
-    <% @tasks.each do |t| %>
+        <table>
+          <% @tasks.each do |t| %>
           <tr>
             <td>
             <p><%= t.subject %></p>
@@ -61,4 +30,10 @@
         </tr>
       <% end %>
       </table>
--->
+    
+    
+      <h1><a href="tasks/new">Add a new task</a></h1>
+      </div>
+    </div>
+  </body>
+</html>
