@@ -25,5 +25,7 @@ module Workspace
     
     #for index view
     config.assets.precompile += %w( tasks-all.js )
+    
+    config.assets.initialize_on_precompile = false
   end
 end
