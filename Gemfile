@@ -9,7 +9,7 @@ gem 'rails', '4.2.10'
 # end
 # Use postgres as the database for production
 # group :production do
-gem 'pg'
+gem 'pg', '~> 0.18'
 # end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
