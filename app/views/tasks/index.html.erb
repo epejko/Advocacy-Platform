@@ -3,11 +3,12 @@
     <title>Tasks</title>
   </head>
   <body>
-    <div class="main">
-      <div class="container">
+    <div class="jumbotron">
         <h1>Index</h1>
         <p>This is where all tasks are listed</p>
+    </div>
     
+    <div id="index-table">
         <table>
           <% @tasks.each do |t| %>
           <tr>
@@ -30,10 +31,10 @@
         </tr>
       <% end %>
       </table>
+      
+      </div>
     
     
       <h1><a href="tasks/new">Add a new task</a></h1>
-      </div>
-    </div>
   </body>
 </html>
