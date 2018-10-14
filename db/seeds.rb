@@ -13,4 +13,7 @@ tasks = [['Planned Parenthood', 'Reproductive Rights', 5, 'ExampleUser1'],
         ['Funding', 'Medicare', 10, 'ExampleUser3']]
 tasks.each do |t|
     Task.create(subject: t[0], category: t[1], points: t[2], author: t[3])
+ 
+#users   
+user0 = User.create(first_name: 'first_name0', last_name: 'last_name0', email: 'email0', username: 'username0', pointtotal: 0, organization: 'org0')
 end
