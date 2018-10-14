@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            New User
+        </title>
+    </head>
+    <body>
+        <h1>New User</h1>
+        <%= form_for @user do |t| %>
+        
+            <%= t.label :first_name, "First Name" %>
+            <%= t.text_field :first_name %>
+            
+            <%= t.label :last_name, "Last name" %>
+            <%= t.text_field :last_name %>
+            
+            <%= t.label :email, "Email" %>
+            <%= t.text_field :email %>
+            
+            <%= t.label :username, "Username"  %>
+            <%= t.text_field :username %>
+            
+            <%= t.label :organization, "Organization"  %>
+            <%= t.text_field :organization %>
+            
+            <%= t.submit "Submit New User" %>
+        <% end %>
+    </body>
+</html>

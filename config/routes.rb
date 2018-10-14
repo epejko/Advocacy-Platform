@@ -64,7 +64,15 @@ Rails.application.routes.draw do
   get 'tasks/:id' => 'tasks#view', as: 'task'
   delete 'tasks/:id' => 'tasks#destroy'
   
- 
+  get 'users' => 'users#index'
+  
+  get 'users/new' => 'users#new'
+  post 'users' => 'users#create'
+  
+  get 'users/:id' => 'users#view', as: 'user'
+  delete 'users/:id' => 'users#destroy'
+  
+  
   
   
 end
