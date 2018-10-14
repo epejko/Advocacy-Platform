@@ -2,10 +2,14 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '4.2.10'
 # Use sqlite3 as the database for Active Record
 group :development, :test do # 
   gem 'sqlite3'
+end
+#Use postgres as the database for production
+group :production do
+  gem 'pg', '~> 0.18'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -47,3 +51,7 @@ group :development do
   gem 'spring'
 end
 
+# Gem for heroku production
+gem 'rails_12factor', group: :production
+
+ruby '2.4.4'
