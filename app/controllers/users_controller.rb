@@ -30,6 +30,6 @@ class UsersController < ApplicationController
     private 
     def user_params
         pointtotal = 0
-        params.require(:first_name).require(:last_name).require(:email).require(:username).require(:pointtotal).permit(:organization)
+        params.require(:first_name).require(:last_name).require(:email).require(:username).permit(:pointtotal).permit(:organization)
         end
 end
