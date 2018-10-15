@@ -54,4 +54,4 @@ end
 # Gem for heroku production
 gem 'rails_12factor', group: :production
 
-ruby '2.4.4'
+ruby '2.5.1'
