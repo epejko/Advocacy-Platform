@@ -1,14 +1,12 @@
 <html>
   <head>
     <title>Tasks</title>
+    <link rel="stylesheet" href="tasks.scss">
   </head>
   <body>
     <div class="jumbotron">
         <h1>Index</h1>
-        <p>This is where all tasks are listed</p>
-    </div>
-    
-    <div id="index-table">
+      <div id="index-table">
         <table>
           <tr>
             <th>Subject</th>
@@ -16,32 +14,35 @@
             <th>Point Value</th>
             <th>Author</th>
           </tr>
-           
+
           <% @tasks.each do |t| %>
-          <tr>
-            <td>
-            <p><%= t.subject %></p>
-          </td>
-          <td>
-            <p><%= t.category %></p>
-          </td>
-          <td>
-            <p><%= t.points %></p>
-          </td>
-          <td>
-            <p><%= t.author %></p>
-          </td>
-          <td>
-            <%= link_to 'View', task_path(t) %>
-          </td>
-          
-        </tr>
-      <% end %>
-      </table>
-      
+            <tr>
+              <td>
+                <p><%= t.subject %></p>
+              </td>
+              <td>
+                <p><%= t.category %></p>
+              </td>
+              <td>
+                <p><%= t.points %></p>
+              </td>
+              <td>
+                <p><%= t.author %></p>
+              </td>
+              <td>
+                <%= link_to 'View', task_path(t) %>
+              </td>
+
+            </tr>
+          <% end %>
+        </table>
+
       </div>
+    </div>
+
+
     
     
-      <h1><a href="tasks/new">Add a new task</a></h1>
+      <button class="button"><a href="tasks/new" >Add a new task</a></button>
   </body>
 </html>
