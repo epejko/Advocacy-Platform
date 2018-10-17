@@ -11,7 +11,7 @@
         <table>
           <% @users.each do |t| %>
           <tr>
-            <td>
+          <td>
             <p><%= t.first_name %></p>
           </td>
           <td>
@@ -31,6 +31,9 @@
           </td>
           <td>
             <%= link_to 'View', user_path(t) %>
+          </td>
+          <td>
+            <%= button_to 'Delete', user_path(t), method: :delete %>
           </td>
           
         </tr>
