@@ -12,6 +12,7 @@
         <p><%= @user.username %></p>
         <p><%= @user.organization %></p>
         <p><%= @user.pointtotal %></p>
+        <%= link_to 'View all users', user_path(@user), method: :index %>
         <%= link_to 'Delete', user_path(@user), method: :delete %>
     </body>
 </html>

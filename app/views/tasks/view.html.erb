@@ -10,6 +10,7 @@
         <p><%= @task.category %></p>
         <p><%= @task.points %></p>
         <p><%= @task.author %></p>
+        <%= link_to 'View all tasks', task_path(@task), method: :index %>
         <%= link_to 'Delete', task_path(@task), method: :delete %>
     </body>
 </html>
