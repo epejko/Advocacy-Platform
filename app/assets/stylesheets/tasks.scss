@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#button button {
+  display: block;
+  height: 500px;
+  width: 300px;
+  background: #cf000c;
+  border: 2px solid rgba(33, 68, 72, 0.59);
+}
+
 h1 {
     color: blue;
 }
@@ -12,27 +20,10 @@ h1 {
     text-align: center;
 }
 
-.button {
-
-  /*Step 2: Basic Button Styles*/
-  border-radius: 4px;
-  height: 100px;
-  width: 300px;
-  background-color: #1287CF;
-  border: 2px solid rgba(33, 68, 72, 0.59);
-  margin-left: auto;
-  margin-right: auto;
-
-  /*Step 3: Text Styles*/
-  text-decoration-color: white;
-  text-align: center;
-  font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-
 
 #tasks-all {
    border-left: solid 1px black;
    padding: 10px 5px;
    margin-top: 10px;
 }
+
