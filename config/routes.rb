@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -56,6 +58,7 @@ Rails.application.routes.draw do
   
   root 'tasks#index'
   
+  #task paths
   get 'tasks' => 'tasks#index'
   
   get 'tasks/new' => 'tasks#new'
@@ -64,6 +67,7 @@ Rails.application.routes.draw do
   get 'tasks/:id' => 'tasks#view', as: 'task'
   delete 'tasks/:id' => 'tasks#destroy'
   
+  #user paths
   get 'users' => 'users#index'
   
   get 'users/new' => 'users#new'
@@ -72,6 +76,10 @@ Rails.application.routes.draw do
   get 'users/:id' => 'users#view', as: 'user'
   delete 'users/:id' => 'users#destroy'
   
+  #session paths - for login
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  delete '/logout' => 'sessions#destroy'
   
   
   
