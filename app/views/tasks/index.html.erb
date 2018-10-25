@@ -12,7 +12,7 @@
             <th>Subject</th>
             <th>Category</th>
             <th>Point Value</th>
-            <th>Author</th>
+            <th>User</th>
           </tr>
 
           <% @tasks.each do |t| %>
@@ -27,7 +27,7 @@
                 <p><%= t.points %></p>
               </td>
               <td>
-                <p><%= t.author %></p>
+                <p><%= t.user %></p>
               </td>
               <td>
                 <%= link_to 'View', task_path(t) %>

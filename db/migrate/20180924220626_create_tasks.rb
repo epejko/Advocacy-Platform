@@ -5,7 +5,7 @@ class CreateTasks < ActiveRecord::Migration
       t.string :subject 
       t.string :category 
       t.integer :points
-      t.string :author
+      t.belongs_to :user
       
       t.timestamp
     end
