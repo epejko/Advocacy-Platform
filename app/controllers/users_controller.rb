@@ -19,7 +19,11 @@ class UsersController < ApplicationController
             render 'new'
         end
     end
-    
+
+    def log_in(user)
+      # code here
+    end
+
     def destroy
         @user = User.find(params[:id])
         @user.destroy
