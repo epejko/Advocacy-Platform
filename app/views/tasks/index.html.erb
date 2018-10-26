@@ -17,22 +17,26 @@
           </div>
 
           <% @tasks.each do |t| %>
+            <div class="card" style="margin-top:15px; margin-bottom: 15px">
+            <div class="card-body">
             <div class="row">
-              <div class="col-lg-3" style="color:white">
+              <div class="col-lg-3" style="color: #338CC8">
                 <h3><%= t.author %></h3>
               </div>
-              <div class="col-lg-3" style="color:white">
+              <div class="col-lg-3" style="color: #338CC8">
                 <h3><%= t.subject %></h3>
               </div>
-              <div class="col-lg-3" style="color:white">
+              <div class="col-lg-3" style="color:#338CC8">
                 <h3><%= t.category %></h3>
               </div>
-              <div class="col-lg-2" style="color:white">
+              <div class="col-lg-2" style="color:#338CC8">
                 <h3><%= t.points %></h3>
               </div>
-              <div class="col-lg-1" style="color:white">
+              <div class="col-lg-1" style="color:#338CC8">
                 <%= link_to 'View', task_path(t) %>
               </div>
+            </div>
+            </div>
             </div>
           <% end %>
         </table>
