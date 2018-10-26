@@ -1,52 +1,55 @@
 <html>
   <head>
+
     <title>Tasks</title>
     <link rel="stylesheet" href="tasks.scss">
   </head>
   <body>
-    <div class="jumbotron">
-        <h1>Index</h1>
-      <div id="index-table">
+  <div class="jumbotron" style="background-color: #338CC8;">
+      <div class="container" id="index-table">
         <table>
-          <tr>
-            <th>Subject</th>
-            <th>Category</th>
-            <th>Point Value</th>
-            <th>User</th>
-          </tr>
+          <div class="row">
+            <div class="col-md-3" style="color:white"><h2>Author</h2></div>
+            <div class="col-md-3" style="color:white"><h2>Subject</h2></div>
+            <div class="col-md-3" style="color:white"><h2>Category</h2></div>
+            <div class="col-md-3" style="color:white"><h2>Point Value</h2></div>
+
+          </div>
 
           <% @tasks.each do |t| %>
-            <tr>
-              <td>
-                <p><%= t.subject %></p>
-              </td>
-              <td>
-                <p><%= t.category %></p>
-              </td>
-              <td>
-                <p><%= t.points %></p>
-              </td>
-              <td>
-                <p><%= t.user %></p>
-              </td>
-              <td>
+            <div class="row">
+              <div class="col-lg-3" style="color:white">
+                <h3><%= t.author %></h3>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                <h3><%= t.subject %></h3>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                <h3><%= t.category %></h3>
+              </div>
+              <div class="col-lg-2" style="color:white">
+                <h3><%= t.points %></h3>
+              </div>
+              <div class="col-lg-1" style="color:white">
                 <%= link_to 'View', task_path(t) %>
-              </td>
-              <td>
-                <%= button_to 'Delete', task_path(t), method: :delete %>
-              </td>
-
-            </tr>
+              </div>
+            </div>
           <% end %>
         </table>
-
       </div>
-    </div>
+      </div>
 
 
-    
-    
-      <button class="button"><a href="tasks/new" >Submit a Report</a></button>
-      <button class="button"><a href="users" >View Users</a></button>
+
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-6">
+          <button type="button" class="btn btn-outline-primary custom-btn btn-lg"><a href="tasks/new">Submit a Report</a></button>
+        </div>
+        <div class="col-lg-6">
+           <button type="button" class="btn btn-outline-primary btn-lg"><a href="users">View Users</a></button>
+        </div>
+      </div>
+      </div>
   </body>
 </html>
