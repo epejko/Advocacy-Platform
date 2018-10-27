@@ -83,6 +83,7 @@ GEM
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    motion-floating-action-button (0.0.4)
     multi_json (1.13.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
@@ -176,6 +177,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   material-sass (= 4.1.1)
+  motion-floating-action-button (= 0.0.4)
   pg (~> 0.18)
   rails (= 4.2.10)
   rails_12factor

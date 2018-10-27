@@ -2,13 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#button button {
-  display: block;
-  height: 500px;
-  width: 300px;
-  background: #cf000c;
-  border: 2px solid rgba(33, 68, 72, 0.59);
-}
+
 .logo{
   content:url(logo.png);
 }
@@ -16,9 +10,7 @@
 .navbar-expand-lg{
   background-color: #0d47a1;
 }
-.btn-outline.primary {
-  border-color: #338CC8;
-}
+
 
 .link{
   color: white;
