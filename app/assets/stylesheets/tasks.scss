@@ -9,7 +9,13 @@
   background: #cf000c;
   border: 2px solid rgba(33, 68, 72, 0.59);
 }
+.logo{
+  content:url(logo.png);
+}
 
+.navbar-expand-lg{
+  background-color: #0d47a1;
+}
 .btn-outline.primary {
   border-color: #338CC8;
 }
@@ -22,11 +28,6 @@ h1 {
     color: blue;
 }
 
-#header .col {
-    padding-top: 5px;
-    margin-top: 5px;
-    text-align: center;
-}
 
 
 #tasks-all {

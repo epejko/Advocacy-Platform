@@ -3,57 +3,53 @@
 
     <title>Tasks</title>
     <link rel="stylesheet" href="tasks.scss">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-  <div class="jumbotron" style="background-color: #338CC8;">
+    .
       <div class="container" id="index-table">
-        <table>
           <div class="row">
-            <div class="col-md-3" style="color:white"><h2>Author</h2></div>
-            <div class="col-md-3" style="color:white"><h2>Subject</h2></div>
-            <div class="col-md-3" style="color:white"><h2>Category</h2></div>
-            <div class="col-md-3" style="color:white"><h2>Point Value</h2></div>
-
+            <div class="col-md-3"><h2 style="color:#338CC8">Name</h2></div>
+            <div class="col-md-3" style="color:#338CC8"><h2>Subject</h2></div>
+            <div class="col-md-3" style="color:#338CC8"><h2>Category</h2></div>
+            <div class="col-md-3" style="color:#338CC8"><h2>Point Value</h2></div>
           </div>
 
-          <% @tasks.each do |t| %>
-            <div class="card" style="margin-top:15px; margin-bottom: 15px">
+         <% @tasks.each do |t| %>
+            <div class="card" style="margin-top:15px; margin-bottom: 15px; background-color: #338CC8;">
             <div class="card-body">
             <div class="row">
-              <div class="col-lg-3" style="color: #338CC8">
+              <div class="col-lg-3" style="color: white">
                 <h3><%= t.author %></h3>
               </div>
-              <div class="col-lg-3" style="color: #338CC8">
+              <div class="col-lg-3" style="color: white">
                 <h3><%= t.subject %></h3>
               </div>
-              <div class="col-lg-3" style="color:#338CC8">
+              <div class="col-lg-3" style="color:white">
                 <h3><%= t.category %></h3>
               </div>
-              <div class="col-lg-2" style="color:#338CC8">
+              <div class="col-lg-2" style="color: white">
                 <h3><%= t.points %></h3>
               </div>
-              <div class="col-lg-1" style="color:#338CC8">
+              <div class="col-lg-1" style="color:white">
                 <%= link_to 'View', task_path(t) %>
               </div>
             </div>
             </div>
             </div>
           <% end %>
-        </table>
-      </div>
       </div>
 
 
+    <div class="container">
+          <div class="btn-float-dropdown dropup">
+            <button aria-expanded="false" aria-haspopup="true" class="btn btn-float btn-primary" data-toggle="dropdown" type="button"><i class="material-icons">add</i></button>
+            <div class="dropdown-menu">
+              <button class="btn btn-float btn-light btn-sm" type="button" href="tasks/new">Submit a report</button>
+            </div>
+          </div>
+          </div>
 
-      <div class="container">
-        <div class="row">
-        <div class="col-lg-6">
-          <button type="button" class="btn btn-outline-primary custom-btn btn-lg"><a href="tasks/new">Submit a Report</a></button>
-        </div>
-        <div class="col-lg-6">
-           <button type="button" class="btn btn-outline-primary btn-lg"><a href="users">View Users</a></button>
-        </div>
-      </div>
-      </div>
+
   </body>
 </html>

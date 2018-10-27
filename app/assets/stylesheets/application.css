@@ -14,5 +14,10 @@
  *= require_self
  */
 
+
 @import "material";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.logo{
+    content:url("logo.png")
+}
