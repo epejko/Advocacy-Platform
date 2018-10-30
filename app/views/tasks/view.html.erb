@@ -3,6 +3,7 @@
         <title>
             New Task
         </title>
+        <%= stylesheet_link_tag 'tasks' %>
     </head>
     <body>
         <h1>View Task</h1>
@@ -10,11 +11,8 @@
         <p><%= @task.category %></p>
         <p><%= @task.points %></p>
         <p><%= @task.author %></p>
-<<<<<<< HEAD
         
-=======
         <%= link_to 'View all tasks', task_path(@task), method: :index %>
         <%= link_to 'Delete', task_path(@task), method: :delete %>
->>>>>>> 261019fe47f3cf0e73e5b6ba2d3ed615a79d2857
     </body>
 </html>
