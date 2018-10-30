@@ -26,12 +26,10 @@ ActiveRecord::Schema.define(version: 20181030193211) do
     t.string   "last_name"
     t.string   "email"
     t.string   "username"
-    t.string   "password"
-    t.string   "password_confirmation"
     t.string   "organization"
     t.integer  "pointtotal"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.string   "password_digest"
   end
 
