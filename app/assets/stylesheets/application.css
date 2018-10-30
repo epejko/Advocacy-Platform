@@ -13,5 +13,16 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD
  
 
+=======
+
+
+@import "material";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.logo{
+    content:url("logo.png")
+}
+>>>>>>> 71f47fd125c6e4c05c648688d52e534cdbf4e924

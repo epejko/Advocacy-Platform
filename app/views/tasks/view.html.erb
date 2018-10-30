@@ -10,9 +10,16 @@
         <p><%= @task.subject %></p>
         <p><%= @task.category %></p>
         <p><%= @task.points %></p>
+<<<<<<< HEAD
         <p><%= @task.author %></p>
         
         <%= link_to 'View all tasks', task_path(@task), method: :index %>
+=======
+        <p><%= @task.user_id %></p>
+        
+        
+        <%= link_to 'View all tasks', '/tasks', method: :index %>
+>>>>>>> 71f47fd125c6e4c05c648688d52e534cdbf4e924
         <%= link_to 'Delete', task_path(@task), method: :delete %>
     </body>
 </html>
