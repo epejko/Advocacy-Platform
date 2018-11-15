@@ -27,7 +27,11 @@ class UsersController < ApplicationController
     end
     
     def view
-        @user = User.find(params[:id])
+        unless User.find(params[:id]) == "tasks"
+            @user = User.find(params[:id])
+        else 
+            @user = current_user
+        end
     end
     
     private 
