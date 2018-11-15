@@ -1,0 +1,51 @@
+<html>
+  <head>
+
+    <title>Tasks</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    .
+      <div class="container" id="index-table">
+          <div class="row">
+            <div class="col-md-3"><h2 style="color:#338CC8">Name</h2></div>
+            <div class="col-md-3" style="color:#338CC8"><h2>Subject</h2></div>
+            <div class="col-md-3" style="color:#338CC8"><h2>Category</h2></div>
+            <div class="col-md-3" style="color:#338CC8"><h2>Point Value</h2></div>
+          </div>
+
+         <% @tasks.each do |t| %>
+            <div class="card" style="margin-top:15px; margin-bottom: 15px; background-color: #338CC8;">
+            <div class="card-body">
+            <div class="row">
+              <div class="col-lg-3" style="color: white">
+                <h3><%= t.author %></h3>
+              </div>
+              <div class="col-lg-3" style="color: white">
+                <h3><%= t.subject %></h3>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                <h3><%= t.category_id %></h3>
+              </div>
+              <div class="col-lg-2" style="color: white">
+                <h3><%= t.points %></h3>
+              </div>
+              <div class="col-lg-1" style="color:white">
+                <h3 class="btn btn-primary" style="color:white"><%= link_to 'View', task_path(t) %></h3>
+              </div>
+            </div>
+            </div>
+            </div>
+          <% end %>
+          
+          <div class="row">
+            <div class="col-lg-3" style="color:white"><h3><a href="tasks/new" class="btn btn-primary">Add a new task</a></h3></div>
+          </div>
+          
+      </div>
+      
+    
+
+
+  </body>
+</html>
