@@ -76,6 +76,8 @@ Rails.application.routes.draw do
   get 'users/:id' => 'users#view', as: 'user'
   delete 'users/:id' => 'users#destroy'
   
+  get 'users/tasks' => 'tasks'
+  
   #session paths - for login
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
