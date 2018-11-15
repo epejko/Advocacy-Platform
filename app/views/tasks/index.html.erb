@@ -6,51 +6,52 @@
       a {
         color: white;
       }
+      
+      #index-title h3 {
+        font-size: 50px;
+      }
+      
+      #index-table row {
+        display: flex;
+        align-content: center;
+      }
+      
+      #single-task {
+        border: solid 1px #98cfe9;
+        margin: 10px;
+        padding: 0px 0px 10px 0px;
+      }
+      
+      #user {
+        background-color: #338cc8;
+        color: white;
+        font-size: 25px;
+      }
+      
+      
+      
     </style>
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     .
-      <div class="container" id="index-table">
-          <div class="row">
-            <div class="col-md-3"><h2 style="color:#338CC8">Name</h2></div>
-            <div class="col-md-3" style="color:#338CC8"><h2>Subject</h2></div>
-            <div class="col-md-3" style="color:#338CC8"><h2>Category</h2></div>
-            <div class="col-md-3" style="color:#338CC8"><h2>Point Value</h2></div>
-          </div>
-
-         <% @tasks.each do |t| %>
-            <div class="card" style="margin-top:15px; margin-bottom: 15px; background-color: #338CC8;">
-            <div class="card-body">
-            <div class="row">
-              <div class="col-lg-3" style="color: white">
-                <h3><%= t.author %></h3>
-              </div>
-              <div class="col-lg-3" style="color: white">
-                <h3><%= t.subject %></h3>
-              </div>
-              <div class="col-lg-3" style="color:white">
-                <h3><%= t.category %></h3>
-              </div>
-              <div class="col-lg-2" style="color: white">
-                <h3><%= t.points %></h3>
-              </div>
-              <div class="col-lg-1" style="color:white">
-                <h3 style="color:white"><%= link_to 'View', task_path(t) %></h3>
-              </div>
-            </div>
-            </div>
+    <div class="container" id="index-title">
+      <h3>Everyone's Tasks</h3>
+    </div>
+    <div class="container" id="index-table">
+      <div class="row">
+        <% @tasks.each do |t| %>
+            <div class="col-sm-3" id="single-task">
+              <h3 id="user"> <%= t.author %></h3>
+              <h3 id="subject">| Subject: <%= t.subject %></h3>
+              <h3 id="category">| Category: <%= t.category %></h3>
+              <h3 id="points">| Points: <%= t.points %></h3>
             </div>
           <% end %>
-          
-          <div class="row">
-            <div class="col-lg-3" style="color:white"><h3><a href="tasks/new" class="btn btn-primary">Add a new task</a></h3></div>
-          </div>
-          
       </div>
-      
-    
+    </div>
+ 
 
 
   </body>
