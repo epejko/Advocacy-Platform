@@ -5,6 +5,12 @@ class TasksController < ApplicationController
     end
     
     def new
+        if logged_in?
+            render 'tasks/new'
+        else
+            flash[:error] = "You must be logged in to submit a task"
+            redirect_to '/tasks'
+        end
         @task = Task.new
     end
     
@@ -29,7 +35,7 @@ class TasksController < ApplicationController
     
     private 
     def task_params
-        params.require(:task).permit(:subject, :category, :points, :user)
+        params.require(:task).permit(:subject, :category, :points, :author)
     end
     
 end

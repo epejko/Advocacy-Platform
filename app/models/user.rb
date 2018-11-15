@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
     #association to task db
-    has_many :tasks
+    #has_many :tasks
     
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     

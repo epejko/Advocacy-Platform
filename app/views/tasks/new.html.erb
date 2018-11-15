@@ -6,8 +6,10 @@
     </head>
     <body>
         <h1>Submit a Report</h1>
-        <%= form_for @task do |t| %>
+        <%= form_for Task.new do |t| %>
         
+            <%= t.hidden_field :author, value: current_user.username %>
+            
             <%= t.label :subject, "Subject" %>
             <%= t.text_field :subject %>
             
@@ -17,8 +19,6 @@
             <%= t.label :points, "Points" %>
             <%= t.text_field :points %>
             
-            <%= t.label :user, "User"  %>
-            <%= t.text_field :user %>
             
             <%= t.submit "Submit Task" %>
         <% end %>
