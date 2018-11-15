@@ -2,21 +2,25 @@
 <html>
 <head>
     <title>Login</title>
+    <style type="text/css">
+        row {
+            display: flex;
+            align-content: center;
+        }
+    </style>
 </head>
 <body>
-    <div>
-    <%= form_for(:session, url: login_path) do |f| %>
-        <%= f.label :email, "Email" %>
-        <%= f.email_field :email %>
-
-        <%= f.label :password, "Password" %>
-        <%= f.password_field :password, class: 'form-control' %>
-
-        <%= f.submit "Log In" %>
-    <% end
-       def login_path
-         # code here
-       end %>
+    <div class="container" id="signup">
+        
+        <%= form_for(:session, url: login_path) do |f| %>
+            <%= f.label :email, "Email" %>
+            <%= f.email_field :email %>
+    
+            <%= f.label :password, "Password" %>
+            <%= f.password_field :password, class: 'form-control' %>
+    
+            <%= f.submit "Log In" %>
+        <% end %>
     </div>
 </body>
 </html>
