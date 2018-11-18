@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Create a Username</h1>
+    <%= form_for @user do |u| %>
+        <%= u.label :username %>
+        <%= u.text_field :username %>
+        
+        <%= u.submit "Submit" %>
+    <% end %>
+</body>
+</html>

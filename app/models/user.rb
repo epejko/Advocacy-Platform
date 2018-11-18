@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+
     
     #for identifying users based on uid 
     def self.find_or_create_from_auth_hash(auth)

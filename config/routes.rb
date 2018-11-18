@@ -73,6 +73,9 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'me', to: 'me#profile', as: 'me'
+  
+  get 'user/edit', to: 'users#edit', as: 'edit'
+  patch 'user', to: 'users#update'
 
   #static pages
   get '/learn' => 'pages#learn'
