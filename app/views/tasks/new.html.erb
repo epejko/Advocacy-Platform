@@ -8,7 +8,7 @@
         <h1>Submit a Report</h1>
         <%= form_for Task.new do |t| %>
         
-            <%= t.hidden_field :author, value: current_user.email %>
+            <%= t.hidden_field :author, value: current_user.username %>
             
             <%= t.label :subject, "Subject" %>
             <%= t.text_field :subject %>
