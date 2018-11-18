@@ -9,6 +9,7 @@
         <%= form_for Task.new do |t| %>
         
             <%= t.hidden_field :author, value: current_user.username %>
+            <%= t.hidden_field :user_id, value: current_user.id %>
             
             <%= t.label :subject, "Subject" %>
             <%= t.text_field :subject %>
