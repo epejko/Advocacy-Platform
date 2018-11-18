@@ -5,7 +5,7 @@ class TasksController < ApplicationController
     end
     
     def new
-        if logged_in?
+        if user_signed_in?
             render 'tasks/new'
         else
             flash[:error] = "You must be logged in to submit a task"

@@ -55,7 +55,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  
+ 
   root 'tasks#index'
   
   #task paths
@@ -67,21 +67,12 @@ Rails.application.routes.draw do
   get 'tasks/:id' => 'tasks#view', as: 'task'
   delete 'tasks/:id' => 'tasks#destroy'
   
-  #user paths
-  get 'users' => 'users#index'
-  
-  get 'users/new' => 'users#new'
-  post 'users' => 'users#create'
-  
-  get 'users/:id' => 'users#view', as: 'user'
-  delete 'users/:id' => 'users#destroy'
-  
-  get 'users/tasks' => 'tasks'
-  
-  #session paths - for login
-  get '/login' => 'sessions#new'
-  post '/login' => 'sessions#create'
-  delete '/logout' => 'sessions#destroy'
+  #user/authentication paths
+  get 'login', to: redirect('/auth/google_oauth2'), as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'me', to: 'me#profile', as: 'me'
 
   #static pages
   get '/learn' => 'pages#learn'

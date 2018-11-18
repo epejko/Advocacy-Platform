@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <% if current_user %>
+        <% current_user.attributes.each do |key, value| %>
+            <p><%= key %>: <%= value %></p> <br>
+        <% end %>
+    <% end %>
+</body>
+</html>
