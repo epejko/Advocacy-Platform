@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 
+    has_many :tasks
     
     #for identifying users based on uid 
     def self.find_or_create_from_auth_hash(auth)
