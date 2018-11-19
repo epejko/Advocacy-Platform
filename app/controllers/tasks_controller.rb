@@ -17,6 +17,8 @@ class TasksController < ApplicationController
     def create
         @task = Task.new(task_params)
         if @task.save
+            total_points = @task.points + current_user.pointtotal
+            current_user.update_attribute(:pointtotal, total_points)
             redirect_to '/tasks'
         else
             render 'new'
@@ -35,7 +37,7 @@ class TasksController < ApplicationController
     
     private 
     def task_params
-        params.require(:task).permit(:subject, :category, :points, :author)
+        params.require(:task).permit(:subject, :category, :points, :author, :user_id)
     end
     
 end

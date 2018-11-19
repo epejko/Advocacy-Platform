@@ -5,6 +5,8 @@
 <body>
     <h1>Create a Username</h1>
     <%= form_for @user do |u| %>
+        <%= u.hidden_field :pointtotal, value: 0 %>
+    
         <%= u.label :username %>
         <%= u.text_field :username %>
         

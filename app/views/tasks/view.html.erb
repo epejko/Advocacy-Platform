@@ -13,7 +13,7 @@
         <p><%= @task.author %></p>
         
         
-        <%= link_to 'View all tasks', '/tasks', method: :index %>
+        <%= link_to 'View all tasks', root_path %>
         <%= link_to 'Delete', task_path(@task), method: :delete %>
     </body>
 </html>
