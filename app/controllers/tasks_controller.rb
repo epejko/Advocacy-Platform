@@ -26,8 +26,10 @@ class TasksController < ApplicationController
     end
     
     def destroy
-        Task.find(params[:id]).destroy
-        
+        @task = Task.find(params[:id])
+        total_points = current_user.pointtotal - @task.points
+        current_user.update_attribute(:pointtotal, total_points)
+        @task.destroy
         redirect_to '/tasks'
     end
     
