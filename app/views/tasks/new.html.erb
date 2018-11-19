@@ -15,7 +15,7 @@
             <%= t.text_field :subject %>
             
             <%= t.label :category, "Category" %>
-            <%= t.text_field :category %>
+            <%= t.select :category, Options['Categories'] %>
             
             <%= t.label :points, "Points" %>
             <%= t.text_field :points %>
