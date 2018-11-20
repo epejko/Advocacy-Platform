@@ -76,6 +76,8 @@ Rails.application.routes.draw do
   
   get 'user/edit', to: 'users#edit', as: 'edit'
   patch 'user', to: 'users#update'
+  
+  get 'users/:id' => 'users#show'
 
   #static pages
   get '/learn' => 'pages#learn'
