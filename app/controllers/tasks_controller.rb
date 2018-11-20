@@ -2,6 +2,7 @@ class TasksController < ApplicationController
     
     def index
         @tasks = Task.all.reverse
+        @users = User.all
     end
     
     def new

@@ -23,7 +23,8 @@
               <h3 id="points"> Points: <%= t.points %></h3>
               <p id="description"> <%= t.description %></p>
               <div class="container" id="view-task">
-                <%= link_to('View', task_path(t)) %>
+                <%= link_to('View User', 'users/%s' % t.user_id) %>
+                <%= link_to('View Task', task_path(t)) %>
               </div>
             </div>
           <% end %>
