@@ -60,7 +60,10 @@ end
 # Gem for heroku production
 gem 'rails_12factor', group: :production
 
-# Google authentication gem
+# Authentication gems
+gem 'omniauth'
 gem 'omniauth-google-oauth2'
+
+
 
 ruby '2.5.1'

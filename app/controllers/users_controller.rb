@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     def update
       @user = current_user
       if @user.update_attributes(user_params)
-          @user.save
+          @user.save!
           redirect_to :me
       else 
           render 'edit'
