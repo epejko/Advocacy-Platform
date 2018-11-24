@@ -27,7 +27,7 @@
       <li class="nav-item"><%= link_to('My Profile', me_path(current_user), :class => 'nav-link', :style => "font-size:15px; color:white") %></li>
       <li class="nav-item"><a class="nav-link" style="font-size:15px; color:white" href="/tasks/new">Add a Task</a></li>
     <% else %>
-      <li class="nav-item"><a class="nav-link" style="font-size:15px; color: white" href="/auth/google_oauth2">Login</a></li>
+      <li class="nav-item"><a class="nav-link" style="font-size:15px; color: white" href="/google-login">Login with Google</a></li>
       <!--- <li class="nav-item"><a class="nav-link" style="font-size:15px; color:white" href="/users/new">Sign Up</a></li> --->
     <% end %>
   </ul>

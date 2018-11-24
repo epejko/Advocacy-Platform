@@ -3,7 +3,13 @@
     <title>Edit</title>
 </head>
 <body>
-    <h1>Create a Username</h1>
+    
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+    <h1>Hi, <%= @user.first_name %></h1>
+    <p>To finish signing up, choose a username</p>
     <%= form_for @user do |u| %>
         <%= u.hidden_field :pointtotal, value: 0 %>
     

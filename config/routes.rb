@@ -68,11 +68,15 @@ Rails.application.routes.draw do
   delete 'tasks/:id' => 'tasks#destroy'
   
   #user/authentication paths
-  get 'login', to: redirect('/auth/google_oauth2'), as: 'login'
+  #get 'login', to: redirect('/auth/google_oauth2'), as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'me', to: 'me#profile', as: 'me'
+  #login page
+  get 'login' => 'home#show', as: 'login'
+  get 'google-login', to: redirect('/auth/google_oauth2')
+  get 'facebook-login', to: redirect('/auth/facebook')
   
   get 'user/edit', to: 'users#edit', as: 'edit'
   patch 'user', to: 'users#update'
@@ -81,6 +85,8 @@ Rails.application.routes.draw do
 
   #static pages
   get '/learn' => 'pages#learn'
+  
+  
   
   
 end
