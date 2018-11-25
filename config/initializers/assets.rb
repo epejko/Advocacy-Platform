@@ -12,3 +12,5 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( tasks.css )
 Rails.application.config.assets.precompile += %w( shared.css )
 Rails.application.config.assets.precompile += %w( home.css )
+Rails.application.config.assets.precompile += %w( pages.css )
+Rails.application.config.assets.precompile += %w( pages.js )
