@@ -2,6 +2,7 @@ class TasksController < ApplicationController
     
     def index
         @tasks = Task.all.reverse
+        @users = User.all
     end
     
     def new
@@ -39,7 +40,7 @@ class TasksController < ApplicationController
     
     private 
     def task_params
-        params.require(:task).permit(:subject, :category, :points, :author, :user_id)
+        params.require(:task).permit(:subject, :category, :points, :author, :user_id, :description)
     end
     
 end

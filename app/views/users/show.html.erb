@@ -1,0 +1,11 @@
+<html>
+<head>
+    <title>User Page</title>
+</head>
+<body>
+    <% @user.attributes.each do |key, value| %>
+        <p><%= key %>: <%= value %></p> <br>
+    <% end %>
+
+</body>
+</html>
