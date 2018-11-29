@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20181119093053) do
     t.string  "subject"
     t.string  "category"
     t.integer "points"
-    t.string  "author"
     t.integer "user_id"
   end
 
