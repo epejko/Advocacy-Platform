@@ -17,9 +17,6 @@
             <%= t.label :category, "Category" %>
             <%= t.select :category, Options['Categories'] %>
             
-            <%= t.label :description, "Description" %>
-            <%= t.text_field :description %>
-            
             <%= t.label :points, "Points" %>
             <%= t.select :points, ((1..10).map {|i| [i,i] }) %>
             
