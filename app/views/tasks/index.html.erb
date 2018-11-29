@@ -18,11 +18,12 @@
               <div class="container" id="user">
                 <h3> <%= t.author %></h3>
               </div>
-              <h3 id="subject"> Subject: <%= t.subject %></h3>
-              <h3 id="category"> Category: <%= t.category %></h3>
+              <h3 id="subject"><%= t.subject %></h3>
+              <h3 id="category"><%= t.category %></h3>
               <h3 id="points"> Points: <%= t.points %></h3>
+              <h3 id="description"><%= t.description %></h3>
               <div class="container" id="view-task">
-                <%= link_to('View', task_path(t)) %>
+                <%= link_to('See More', task_path(t)) %>
               </div>
             </div>
           <% end %>

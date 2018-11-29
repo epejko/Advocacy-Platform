@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
     
+    def show
+      @user = User.find(params[:id])
+    end
+    
     def edit
       @user = current_user
     end
@@ -7,7 +11,7 @@ class UsersController < ApplicationController
     def update
       @user = current_user
       if @user.update_attributes(user_params)
-          @user.save
+          @user.save!
           redirect_to :me
       else 
           render 'edit'

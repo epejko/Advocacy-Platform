@@ -18,7 +18,10 @@
             <%= t.select :category, Options['Categories'] %>
             
             <%= t.label :points, "Points" %>
-            <%= t.text_field :points %>
+            <%= t.select :points, ((1..10).map {|i| [i,i] }) %>
+            
+            <%= t.label :description, "Description" %>
+            <%= t.text_field :description %>
             
             
             <%= t.submit "Submit Task" %>

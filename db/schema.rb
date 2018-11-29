@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181119093053) do
+ActiveRecord::Schema.define(version: 20181124203310) do
 
   create_table "tasks", force: :cascade do |t|
     t.string  "subject"
     t.string  "category"
     t.integer "points"
     t.integer "user_id"
+    t.string  "description"
   end
 
   add_index "tasks", ["user_id"], name: "index_tasks_on_user_id"
