@@ -1,3 +1,34 @@
 // Place all the styles related to the Me controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#user-title {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 75px;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+#user-title h2 {
+    font-family: Helvetica;
+    font-size: 75px;
+}
+
+#user-one {
+    height: 150px;
+    width: 550px;
+    border: 1px solid grey;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
+#user {
+    background-color: #d7dadb;
+    padding-top: 5px;
+    margin:0px;
+}
+
+
+#subject {
+}
