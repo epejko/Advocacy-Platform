@@ -64,6 +64,9 @@ gem 'rails_12factor', group: :production
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 
+#image upload gems
+gem 'carrierwave', '~> 0.10.0'
+gem 'mini_magick', '~> 4.3'
 
 
 ruby '2.5.1'

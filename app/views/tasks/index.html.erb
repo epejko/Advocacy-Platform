@@ -22,6 +22,7 @@
               <h3 id="category"><%= t.category %></h3>
               <h3 id="points"> Points: <%= t.points %></h3>
               <h3 id="description"><%= t.description %></h3>
+              <h3> Image: <%= image_tag t.image.thumb.url %></h3>
               <div class="container" id="view-task">
                 <%= link_to('See More', task_path(t)) %>
               </div>
