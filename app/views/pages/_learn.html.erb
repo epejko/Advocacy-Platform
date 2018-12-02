@@ -3,6 +3,49 @@
   <title>Learn</title>
   <%= javascript_include_tag "pages", media: "all", "data-turbolinks-track" => "reload" %>
   <%= stylesheet_link_tag "pages", media: "all", "data-turbolinks-track" => "reload"%>
+  <style type="text/css">
+    #learn-header h1 {
+    font-size: 100px;
+    color: white;
+}
+
+#learn-header p {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+#learn-header {
+    height: 450px;
+    background-image: url("https://images.unsplash.com/photo-1534774592507-488885376ad3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8f04cb891ad2a6483753e937b01e6cf1&auto=format&fit=crop&w=1650&q=80");
+    background-position: bottom;
+    margin-bottom: 0px;
+}
+
+#learn-header .container {
+    max-width: 55rem;
+    margin-top: 120px;
+    border: 1px solid white;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#learn-content {
+    background-color: white;
+    display: flex;
+    align-content: center;
+}
+
+.card {
+    margin: 18px;
+}
+
+.card h5 {
+    font-size: 25px;
+}
+  </style>
   
 </head>
 <html>
