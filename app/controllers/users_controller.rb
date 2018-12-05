@@ -5,19 +5,27 @@ class UsersController < ApplicationController
     end
     
     def edit
-      @user = current_user
+      if current_user.admin?
+        @user = User.find(params[:id])
+      else 
+        @user = current_user
+      end
     end
   
     def update
-      @user = current_user
+      if current_user.admin?
+        @user = User.find(params[:id])
+      else 
+        @user = current_user
+      end
       begin @user.update_attributes(user_params) 
       rescue ActiveRecord::RecordNotUnique => e
         if e
           flash[:error] = "Username has already been taken"
-          render 'edit'
+          render 'edit_user_path'
         else 
           @user.save!
-          redirect_to :me
+          redirect_to '/tasks'
         end
       end
     end
@@ -38,9 +46,10 @@ class UsersController < ApplicationController
       redirect_to '/tasks'
     end
     
+    
     private
     def user_params
-      params.require(:user).permit(:username, :pointtotal)
+      params.require(:user).permit(:username, :pointtotal, :admin)
     end
 
   

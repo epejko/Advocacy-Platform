@@ -8,6 +8,7 @@
     <div class="alert alert-<%= key %>"><%= value %></div>
 <% end %>
 
+<% if !@user.username %>
     <h1>Hi, <%= @user.first_name %></h1>
     <p>To finish signing up, choose a username</p>
     <%= form_for @user do |u| %>
@@ -18,5 +19,17 @@
         
         <%= u.submit "Submit" %>
     <% end %>
+<% else %>
+    <%= form_for @user do |u| %>
+    
+        <%= u.label :username %>
+        <%= u.text_field :username %>
+        
+        <%= u.label :admin %>
+        <%= u.check_box :admin %>
+        
+        <%= u.submit "Submit" %>
+    <% end %>
+<% end %>
 </body>
 </html>

@@ -78,11 +78,11 @@ Rails.application.routes.draw do
   get 'google-login', to: redirect('/auth/google_oauth2')
   get 'facebook-login', to: redirect('/auth/facebook')
   
-  get 'user/edit', to: 'users#edit', as: 'edit'
-  patch 'user', to: 'users#update'
+  get 'user/edit/:id', to: 'users#edit', as: 'edit_user'
+  patch 'user/:id', to: 'users#update'
   
-  get 'users/:id' => 'users#show', as: 'usersp'
-  delete 'users/:id' => 'users#destroy'
+  get 'user/:id' => 'users#show', as: 'user'
+  delete 'user/:id' => 'users#destroy'
 
   #static pages
   get '/learn' => 'pages#learn'
