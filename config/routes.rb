@@ -81,11 +81,14 @@ Rails.application.routes.draw do
   get 'user/edit', to: 'users#edit', as: 'edit'
   patch 'user', to: 'users#update'
   
-  get 'users/:id' => 'users#show'
+  get 'users/:id' => 'users#show', as: 'usersp'
+  delete 'users/:id' => 'users#destroy'
 
   #static pages
   get '/learn' => 'pages#learn'
   
+  #admin page
+  get '/admin' => 'users#admin'
   
   
   

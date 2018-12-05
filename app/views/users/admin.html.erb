@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Admin Page</title>
+</head>
+<body>
+    <% @users.each do |u| %>
+        <% u.attributes.each do |key, value| %>
+            <p><%= key %>: <%= value %></p> <br>
+        <% end %>
+        <%= link_to "Delete User", usersp_path(u), method: :delete,  data: { confirm: "You sure?" } %>
+    <% end %>
+</body>
+</html>
