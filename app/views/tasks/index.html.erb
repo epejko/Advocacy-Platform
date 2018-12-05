@@ -13,21 +13,23 @@
     </div>
     <div class="container" id="index-table">
       <div class="container" id="all-tasks">
-        <% @tasks.each do |t| %>
-            <div class="container" id="single-task">
-              <div class="container" id="user">
-                <h3> <%= t.author %></h3>
+        <% if @tasks %>
+          <% @tasks.each do |t| %>
+              <div class="container" id="single-task">
+                <div class="container" id="user">
+                  <h3> <%= t.author %></h3>
+                </div>
+                <h3 id="subject"><%= t.subject %></h3>
+                <h3 id="category"><%= t.category %></h3>
+                <h3 id="points"> Points: <%= t.points %></h3>
+                <h3 id="description"><%= t.description %></h3>
+                <h3> Image: <%= image_tag t.image.thumb.url %></h3>
+                <div class="container" id="view-task">
+                  <%= link_to('See More', task_path(t)) %>
+                </div>
               </div>
-              <h3 id="subject"><%= t.subject %></h3>
-              <h3 id="category"><%= t.category %></h3>
-              <h3 id="points"> Points: <%= t.points %></h3>
-              <h3 id="description"><%= t.description %></h3>
-              <h3> Image: <%= image_tag t.image.thumb.url %></h3>
-              <div class="container" id="view-task">
-                <%= link_to('See More', task_path(t)) %>
-              </div>
-            </div>
           <% end %>
+        <% end %>
       </div>
     </div>
  
