@@ -47,6 +47,11 @@ GEM
       sass (>= 3.5.2)
     builder (3.2.3)
     byebug (10.0.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -84,6 +89,10 @@ GEM
     material-sass (4.1.1)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.5.2)
+    mime-types (3.2.2)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2018.0812)
+    mini_magick (4.9.2)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -194,10 +203,12 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootstrap (= 4.1.1)
   byebug
+  carrierwave (~> 0.10.0)
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
   material-sass (= 4.1.1)
+  mini_magick (~> 4.3)
   omniauth
   omniauth-google-oauth2
   pg (~> 0.18)
