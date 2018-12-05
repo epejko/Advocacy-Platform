@@ -31,6 +31,13 @@ class UsersController < ApplicationController
       end
     end
     
+    def destroy
+      @user = User.find(params[:id])
+      @user.destroy
+      flash[:success] = "Account Deleted"
+      redirect_to '/tasks'
+    end
+    
     private
     def user_params
       params.require(:user).permit(:username, :pointtotal)
