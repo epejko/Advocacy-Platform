@@ -10,11 +10,15 @@ class UsersController < ApplicationController
   
     def update
       @user = current_user
-      if @user.update_attributes(user_params)
+      begin @user.update_attributes(user_params) 
+      rescue ActiveRecord::RecordNotUnique => e
+        if e
+          render 'edit'
+          flash[:error] = "Username has already been taken"
+        else 
           @user.save!
           redirect_to :me
-      else 
-          render 'edit'
+        end
       end
     end
     

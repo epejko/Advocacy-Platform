@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181205195203) do
+ActiveRecord::Schema.define(version: 20181205202850) do
 
   create_table "tasks", force: :cascade do |t|
     t.string  "subject"
@@ -49,5 +49,6 @@ ActiveRecord::Schema.define(version: 20181205195203) do
   add_index "users", ["provider"], name: "index_users_on_provider"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   add_index "users", ["uid"], name: "index_users_on_uid"
+  add_index "users", ["username"], name: "index_users_on_username", unique: true
 
 end
