@@ -65,7 +65,8 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 
 #image upload gems
-gem 'carrierwave', '~> 0.10.0'
+#gem 'carrierwave', '~> 0.10.0'
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'mini_magick', '~> 4.3'
 
 
