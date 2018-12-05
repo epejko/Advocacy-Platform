@@ -7,7 +7,8 @@
         <% u.attributes.each do |key, value| %>
             <p><%= key %>: <%= value %></p> <br>
         <% end %>
-        <%= link_to "Delete User", usersp_path(u), method: :delete,  data: { confirm: "You sure?" } %>
+        <%= link_to "Delete User", user_path(u), method: :delete,  data: { confirm: "Are you sure?" } %>
+        <%= link_to "Edit User", edit_user_path(u) %>
     <% end %>
 </body>
 </html>
