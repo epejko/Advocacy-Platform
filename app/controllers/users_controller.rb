@@ -18,6 +18,15 @@ class UsersController < ApplicationController
       end
     end
     
+    def admin
+      @user = current_user
+      if @user.admin?
+        @users = User.all
+      else 
+        redirect_to '/tasks'
+      end
+    end
+    
     private
     def user_params
       params.require(:user).permit(:username, :pointtotal)

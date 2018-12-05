@@ -86,6 +86,8 @@ Rails.application.routes.draw do
   #static pages
   get '/learn' => 'pages#learn'
   
+  #admin page
+  get '/admin' => 'users#admin'
   
   
   
