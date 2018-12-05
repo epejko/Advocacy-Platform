@@ -13,8 +13,8 @@ class UsersController < ApplicationController
       begin @user.update_attributes(user_params) 
       rescue ActiveRecord::RecordNotUnique => e
         if e
-          render 'edit'
           flash[:error] = "Username has already been taken"
+          render 'edit'
         else 
           @user.save!
           redirect_to :me
