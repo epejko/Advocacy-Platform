@@ -30,9 +30,10 @@ class UsersController < ApplicationController
           render 'edit_user_path'
         else 
           @user.save!
-          redirect_to '/tasks'
         end
       end
+      flash[:success] = "Profile Updated"
+      redirect_to root_path
     end
     
     def admin
