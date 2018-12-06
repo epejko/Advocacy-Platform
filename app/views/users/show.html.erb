@@ -31,7 +31,14 @@
             </div>
             <% @tasks.each do |t| %>
                 <h3 id="subject"><%= t.subject %></h3>
+                <%= link_to('View', task_path(t)) %>
             <% end %>
+        </div>
+        
+        <div class="container" id="options">
+            <div class="row">
+                <%= link_to 'Edit Profile', edit_user_path(@user) %>
+            </div>
         </div>
 </body>
 </html>

@@ -47,9 +47,16 @@ class UsersController < ApplicationController
     
     def destroy
       @user = User.find(params[:id])
-      @user.destroy
+      @tasks = Task.where(author: @user.username)
+      @tasks.destroy_all
+      if @user == current_user
+        @user.destroy
+        redirect_to '/logout'
+      else
+        @user.destroy
+        redirect_to '/tasks'
+      end
       flash[:success] = "Account Deleted"
-      redirect_to '/tasks'
     end
     
     
