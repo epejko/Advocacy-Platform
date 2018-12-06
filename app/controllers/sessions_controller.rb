@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   	if @user.username.nil?
   	  redirect_to edit_user_path(@user)
   	else
-  	   redirect_to :me
+  	   redirect_to user_path(@user)
   	end
   end
 

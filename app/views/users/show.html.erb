@@ -1,11 +1,37 @@
 <html>
 <head>
-    <title>User Page</title>
+    <title>Profile</title>
+    
+    <%= stylesheet_link_tag "tasks", media: "all", "data-turbolinks-track" => "reload" %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <% @user.attributes.each do |key, value| %>
-        <p><%= key %>: <%= value %></p> <br>
-    <% end %>
-
+    
+        <div class="container" id="user-title">
+            <h2><%= @user.first_name%> <%= @user.last_name%></h2>
+        </div>
+        
+        <div></div>
+        
+        <div class="container" id="user-table">
+            <div class="container" id="user-one">
+                <div class="container" id="user">
+                    <h3> <%= @user.username %></h3>
+                </div>
+                <h3 id="email"> Points: <%= @user.email %></h3>
+                <h3 id="points"> Points: <%= @user.pointtotal %></h3>
+            </div>
+        </div>
+        
+        <div></div>
+        
+        <div class = "container" id="task-table">
+            <div class = "container" id="user">
+                <h3>My Tasks:</h3>
+            </div>
+            <% @tasks.each do |t| %>
+                <h3 id="subject"><%= t.subject %></h3>
+            <% end %>
+        </div>
 </body>
 </html>

@@ -1,7 +1,12 @@
 class UsersController < ApplicationController
     
     def show
-      @user = User.find(params[:id])
+        @user = User.find(params[:id])
+        @tasks = Task.where(author: @user.username)
+        if current_user.admin?
+          @users = User.all
+          @tasks_all = Task.all
+        end
     end
     
     def edit
@@ -34,6 +39,7 @@ class UsersController < ApplicationController
       @user = current_user
       if @user.admin?
         @users = User.all
+        @tasks = Task.all
       else 
         redirect_to '/tasks'
       end
