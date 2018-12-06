@@ -1,0 +1,31 @@
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#index-title {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 75px;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#index-title h3 {
+  font-family: Helvetica;
+  font-size: 75px;
+}
+
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#single-task {
+  height: 200px;
+  width: 550px;
+  border: 1px solid grey;
+  margin-bottom: 50px;
+  padding: 0px;
+}
+
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#user {
+  background-color: #d7dadb;
+  padding-top: 5px;
+  margin: 0px;
+}

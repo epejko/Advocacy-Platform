@@ -1,3 +1,33 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#user-title {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 75px;
+    padding: 0px;
+    margin-left: 20px;
+    
+}
+
+#user-title h2 {
+    font-size: 40px;
+}
+
+#user-table {
+    margin-top: 0px;
+    margin-left: 400px;
+    border-left: 1px solid black;
+    width: 500px;
+    
+}
+
+#task-table {
+    margin-left: 400px;
+    margin-top: 20px;
+    border-left: 1px solid black;
+}
+
+#task-table h3 {
+    font-size: 35px;
+}
