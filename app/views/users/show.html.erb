@@ -2,36 +2,51 @@
 <head>
     <title>Profile</title>
     
-    <%= stylesheet_link_tag "tasks", media: "all", "data-turbolinks-track" => "reload" %>
+    <%= stylesheet_link_tag "users", media: "all", "data-turbolinks-track" => "reload" %>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     
-        <div class="container" id="user-title">
+    <div class="container" id="user-title">
+        <div class="container">
             <h2><%= @user.first_name%> <%= @user.last_name%></h2>
+            <%= image_tag(@user.picture, {:style => 'width: 50px'}) %>
         </div>
+    </div>
         
-        <div></div>
         
-        <div class="container" id="user-table">
-            <div class="container" id="user-one">
-                <div class="container" id="user">
-                    <h3> <%= @user.username %></h3>
+    <div class="container" id="user-table">
+        <div class="container" id="user-one">
+            <h3> <%= @user.username %></h3>
+            <h3 id="email"> Email: <%= @user.email %></h3>
+            <h3 id="points"> Total Points: <%= @user.pointtotal %></h3>
+            <%= link_to 'Edit Profile', edit_user_path(@user) %>
+        </div>
+    </div>
+        
+    <div class = "container" id="task-table">
+        <div class = "container" id="user">
+        <h3>My Tasks:</h3>
+        <% @tasks.each do |t| %>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 id="subject"><%= t.subject %></h2>
                 </div>
-                <h3 id="email"> Points: <%= @user.email %></h3>
-                <h3 id="points"> Points: <%= @user.pointtotal %></h3>
+                <div class="col-sm-3">
+                    <h2>Points: <%= t.points %></h2>
+                </div>
+                <div class="col-sm-3">
+                    <%= link_to('View', task_path(t)) %>
+                </div>
             </div>
+        <% end %>
         </div>
+    </div>
         
-        <div></div>
-        
-        <div class = "container" id="task-table">
-            <div class = "container" id="user">
-                <h3>My Tasks:</h3>
+        <div class="container" id="options">
+            <div class="row">
+                
             </div>
-            <% @tasks.each do |t| %>
-                <h3 id="subject"><%= t.subject %></h3>
-            <% end %>
         </div>
 </body>
 </html>

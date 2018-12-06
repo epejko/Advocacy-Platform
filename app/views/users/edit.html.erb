@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Edit</title>
+    <%= stylesheet_link_tag "users", media: "all", "data-turbolinks-track" => "reload" %>
 </head>
 <body>
     
@@ -20,6 +21,7 @@
         <%= u.submit "Submit" %>
     <% end %>
 <% else %>
+    <h1><%= @user.first_name %> <%= @user.last_name%></h1>
     <%= form_for @user do |u| %>
     
         <%= u.label :username %>
@@ -32,6 +34,8 @@
         
         <%= u.submit "Submit" %>
     <% end %>
+    
+    <%= link_to "Delete Account", user_path(@user), method: :delete,  data: { confirm: "Are you sure? This will also delete all assocaiated tasks." } %>
 <% end %>
 </body>
 </html>

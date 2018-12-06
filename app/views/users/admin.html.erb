@@ -1,41 +1,30 @@
 <html>
 <head>
     <title>Admin Page</title>
+    <%= stylesheet_link_tag "users", media: "all", "data-turbolinks-track" => "reload" %>
 </head>
 <body>
-    <% @users.each do |u| %>
-        <div class="container" id="user-title">
-            <h2><%= @user.first_name%> <%= @user.last_name%></h2>
+    
+    <%= @users.each do |u| %>
+    <div class="container" id="user-title">
+        <div class="container">
+            <h2><%= u.first_name%> <%= u.last_name%></h2>
+            <%= image_tag(u.picture, {:style => 'width: 50px'}) %>
         </div>
+    </div>
         
-        <div></div>
         
-        <div class="container" id="user-table">
-            <div class="container" id="user-one">
-                <div class="container" id="user">
-                    <h3> <%= @user.username %></h3>
-                </div>
-                <h3 id="email"> Points: <%= @user.email %></h3>
-                <h3 id="points"> Points: <%= @user.pointtotal %></h3>
-            </div>
+    <div class="container" id="user-table">
+        <div class="container" id="user-one">
+            <h3> <%= u.username %></h3>
+            <h3 id="email"> Email: <%= u.email %></h3>
+            <h3 id="points"> Total Points: <%= u.pointtotal %></h3>
+            <%= link_to "Delete User", user_path(u), method: :delete,  data: { confirm: "Are you sure?" } %>
+            <%= link_to "Edit User", edit_user_path(u) %>
         </div>
-        
-        <div></div>
-        
-        <div class = "container" id="task-table">
-            <div class = "container" id="user">
-                <% if u == current_user %>
-                    <h3>My Tasks:</h3>
-                <% else %>
-                    <h3><%= u.first_name %>'s Tasks:</h3>
-                <% end %>
-            </div>
-            <% @tasks.where(author: u.username).each do |t| %>
-                <h3 id="subject"><%= t.subject %></h3>
-            <% end %>
-        </div>
-        <%= link_to "Delete User", user_path(u), method: :delete,  data: { confirm: "Are you sure?" } %>
-        <%= link_to "Edit User", edit_user_path(u) %>
+    </div>
     <% end %>
+        
+
 </body>
 </html>
