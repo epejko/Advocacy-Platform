@@ -11,9 +11,10 @@
             <%= t.hidden_field :author, value: current_user.username %>
             <%= t.hidden_field :user_id, value: current_user.id %>
             
-            <%= t.label :subject, "Subject" %>
-            <%= t.text_field :subject %>
-            
+            <div class="input-field">
+              <%= t.label :subject, "Subject" %>
+              <%= t.text_field :subject %>
+            </div>
             <%= t.label :category, "Category" %>
             <%= t.select :category, Options['Categories'] %>
             
