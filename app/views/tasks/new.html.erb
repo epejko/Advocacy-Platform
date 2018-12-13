@@ -1,11 +1,6 @@
 <html>
     <head>
-      <%= stylesheet_link_tag "tasks", media: "all", "data-turbolinks-track" => "reload" %>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
-
-
-      <title>
+        <title>
            Submit a Report
         </title>
     </head>
@@ -16,11 +11,9 @@
             <%= t.hidden_field :author, value: current_user.username %>
             <%= t.hidden_field :user_id, value: current_user.id %>
             
-            <div class="input-field col s6">
-              <input placeholder="Subject" id="subject" type="text">
-              <%= t.text_field :subject %>
-            </div>
-            </div>
+            <%= t.label :subject, "Subject" %>
+            <%= t.text_field :subject %>
+            
             <%= t.label :category, "Category" %>
             <%= t.select :category, Options['Categories'] %>
             
@@ -35,8 +28,5 @@
             
             <%= t.submit "Submit Task" %>
         <% end %>
-        <script type="text/css" src="../../../public/materialize.min.js"></script>
     </body>
-
-
 </html>
