@@ -5,11 +5,10 @@
 
     <%= stylesheet_link_tag "tasks", media: "all", "data-turbolinks-track" => "reload" %>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
 
   </head>
   <body>
-    .
     <div class="container" id="index-title">
       <h3>All Tasks</h3>
     </div>
@@ -19,16 +18,18 @@
       <div class="col">
         <% @tasks.each do |t| %>
             <div class="card blue-grey darken-1"  id="single-task">
-              <div class="container" id="user">
+              <div class="card-content white-text">
+              <div class="card-title" id="user">
                 <h3> <%= t.author %></h3>
               </div>
-              <h3 id="subject"><%= t.subject %></h3>
-              <h3 id="category"><%= t.category %></h3>
-              <h3 id="points"> Points: <%= t.points %></h3>
-              <h3 id="description"><%= t.description %></h3>
-              <h3> Image: <%= image_tag t.image.thumb.url %></h3>
-              <div class="container" id="view-task">
+              <p id="subject"><%= t.subject %></p>
+              <p id="category"><%= t.category %></p>
+              <p id="points"> Points: <%= t.points %></p>
+              <p id="description"><%= t.description %></p>
+              <p> Image: <%= image_tag t.image.thumb.url %></p>
+              <div class="card-action" id="view-task">
                 <%= link_to('See More', task_path(t)) %>
+              </div>
               </div>
             </div>
         <% end %>
@@ -40,6 +41,6 @@
     </div>
 
 
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+
   </body>
 </html>
