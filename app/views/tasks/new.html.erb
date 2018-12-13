@@ -7,16 +7,10 @@
     <body>
         <h1>Submit a Report</h1>
         <%= form_for Task.new do |t| %>
-          <%= t.hidden_field :author, value: current_user.username %>
-          <%= t.hidden_field :user_id, value: current_user.id %>
-
-      <div class="row">
-          <form class="col s12">
-            <div class ="input-field col s6">
-              <input placeholder="Subject"> <%= t.text_field :subject %> </div>
-          </form>
-        </div>
-
+        
+            <%= t.hidden_field :author, value: current_user.username %>
+            <%= t.hidden_field :user_id, value: current_user.id %>
+            
             <%= t.label :subject, "Subject" %>
             <%= t.text_field :subject %>
             
@@ -36,4 +30,3 @@
         <% end %>
     </body>
 </html>
-
