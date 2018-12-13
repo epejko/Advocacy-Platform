@@ -19,7 +19,7 @@
         <% @tasks.each do |t| %>
             <div class="card large red darken-1"  id="single-task">
               <div class="card-content white-text">
-                <h3 id="user"> <%= t.author %></h3>
+                <p style="font-size: large" id="user"><i> <%= t.author %></i></p>
               <p id="subject" style="font-size: medium"><%= t.subject %><p/>
               <p id="category" style="font-size: medium"><%= t.category %><p/>
               <p id="points" style="font-size: medium"> Points: <%= t.points %><p/>
