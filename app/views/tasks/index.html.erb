@@ -22,10 +22,10 @@
               <div class="card-title" id="user">
                 <h3> <%= t.author %></h3>
               </div>
-              <h3 id="subject"><%= t.subject %></h3>
-              <h3 id="category"><%= t.category %></h3>
-              <h3 id="points"> Points: <%= t.points %></h3>
-              <h3 id="description"><%= t.description %></h3>
+              <p id="subject" style="font-size: medium"><%= t.subject %><p/>
+              <p id="category" style="font-size: small"><%= t.category %><p/>
+              <p id="points"> Points: <%= t.points %><p/>
+              <p id="description"><%= t.description %><p/>
               <h3> Image: <%= image_tag t.image.thumb.url %></h3>
               <div class="card-action" id="view-task">
                 <%= link_to('See More', task_path(t)) %>
