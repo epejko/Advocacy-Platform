@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 20181205202850) do
     t.integer "points"
     t.integer "user_id"
     t.string  "description"
-    t.string  "author"
     t.string  "image"
   end
 
