@@ -12,8 +12,9 @@
     <div class="container" id="index-title">
       <% if @tasks %>
       <div class="row" id="all-tasks">
+      <div class="col"></div>
+      <div class="col-lg">
         <% @tasks.each do |t| %>
-          <div class="center-block">
             <div class="card large light-blue" style="height: 225px; width: 500px;" id="single-task">
               <div class="card-content white-text">
                 <span class="card-title" style="font-size: 25px" id="user"><i><b><%= t.author %></b></i></span>
@@ -30,9 +31,9 @@
         <% end %>
       <% end %>
       </div>
+    <div class="col"></div>
       </div>
       </div>
-
     <div class="container" id="bottom-left">
       <div id ="bottom-left" class="fixed-action-btn">
         <a href="/tasks/new" class="btn-floating btn-large waves-effect waves light-blue darken-4"><i class="material-icons">add</i></a>

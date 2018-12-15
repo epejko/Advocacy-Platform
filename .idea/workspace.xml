@@ -47,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="339">
+              <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -496,28 +496,7 @@
       <workItem from="1544653692610" duration="4484000" />
       <workItem from="1544658594143" duration="9377000" />
       <workItem from="1544842143997" duration="6824000" />
-      <workItem from="1544854183580" duration="1111000" />
-    </task>
-    <task id="LOCAL-00020" summary="still trying">
-      <created>1544730159298</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1544730159298</updated>
-    </task>
-    <task id="LOCAL-00021" summary="still trying">
-      <created>1544730281068</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1544730281068</updated>
-    </task>
-    <task id="LOCAL-00022" summary="still trying">
-      <created>1544730449941</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1544730449941</updated>
+      <workItem from="1544854183580" duration="1517000" />
     </task>
     <task id="LOCAL-00023" summary="still trying">
       <created>1544730731490</created>
@@ -841,7 +820,28 @@
       <option name="project" value="LOCAL" />
       <updated>1544900800841</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="&#10;Fixing spacing">
+      <created>1544901261478</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1544901261478</updated>
+    </task>
+    <task id="LOCAL-00070" summary="&#10;Fixing spacing">
+      <created>1544901357767</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1544901357767</updated>
+    </task>
+    <task id="LOCAL-00071" summary="&#10;Fixing spacing">
+      <created>1544901485663</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1544901485663</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -862,7 +862,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58644000" />
+    <option name="totallyTimeSpent" value="59050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1280" height="741" extended-state="6" />
@@ -932,7 +932,8 @@
     <MESSAGE value="moved logout left" />
     <MESSAGE value="&#10;still navbar" />
     <MESSAGE value="&#10;DDD" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;DDD" />
+    <MESSAGE value="&#10;Fixing spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Fixing spacing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.5.1/gems/mail-2.7.0/lib/mail/fields/subject_field.rb" />
@@ -1130,8 +1131,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="339">
+          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
