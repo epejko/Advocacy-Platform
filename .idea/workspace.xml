@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83dce058-d9ca-4725-a878-ac88435d2301" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tasks/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tasks/index.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -19,7 +18,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Advocacy_Platform@test__Advocacy_Platform.rcov" NAME="test: Advocacy-Platform Coverage Results" MODIFIED="1540597050385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Advocacy-Platform" />
-    <SUITE FILE_PATH="coverage/Advocacy_Platform_final@Development__Advocacy_Platform.rcov" NAME="Development: Advocacy-Platform Coverage Results" MODIFIED="1544848461648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Advocacy-Platform" />
+    <SUITE FILE_PATH="coverage/Advocacy_Platform_final@Development__Advocacy_Platform.rcov" NAME="Development: Advocacy-Platform Coverage Results" MODIFIED="1544853918264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Advocacy-Platform" />
     <SUITE FILE_PATH="coverage/Advocacy_Platform@Development__Advocacy_Platform.rcov" NAME="Development: Advocacy-Platform Coverage Results" MODIFIED="1540596375875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Advocacy-Platform" />
     <SUITE FILE_PATH="coverage/Advocacy_Platform@Production__Advocacy_Platform.rcov" NAME="Production: Advocacy-Platform Coverage Results" MODIFIED="1540610111652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Advocacy-Platform" />
   </component>
@@ -47,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="39" column="95" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
+            <state relative-caret-position="43">
+              <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -82,7 +81,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-282" />
+            <state relative-caret-position="345">
+              <caret line="23" column="72" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -498,21 +499,7 @@
       <workItem from="1540593786451" duration="10790000" />
       <workItem from="1544653692610" duration="4484000" />
       <workItem from="1544658594143" duration="9377000" />
-      <workItem from="1544842143997" duration="6824000" />
-    </task>
-    <task id="LOCAL-00018" summary="working on submit a task styling">
-      <created>1544663512702</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1544663512702</updated>
-    </task>
-    <task id="LOCAL-00019" summary="still trying">
-      <created>1544663622572</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1544663622572</updated>
+      <workItem from="1544842143997" duration="7941000" />
     </task>
     <task id="LOCAL-00020" summary="still trying">
       <created>1544730159298</created>
@@ -843,7 +830,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544849961406</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="&#10;DDD">
+      <created>1544850240844</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1544850240844</updated>
+    </task>
+    <task id="LOCAL-00068" summary="&#10;DDD">
+      <created>1544853385651</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1544853385652</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -864,18 +865,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57533000" />
+    <option name="totallyTimeSpent" value="58650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="27" width="1280" height="739" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.54038775" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63004845" weight="0.6097946" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.63004845" visible="true" weight="0.6085578" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39872408" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -883,7 +883,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49919224" weight="0.1800948" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.58562195" weight="0.328594" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.58562195" weight="0.3280507" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.36995155" side_tool="true" weight="0.6012759" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.71178347" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32959327" />
@@ -1123,11 +1123,6 @@
         <state relative-caret-position="-3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/me/profile.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1176,6 +1171,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="72" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1189,8 +1191,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="39" column="95" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
+        <state relative-caret-position="43">
+          <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
