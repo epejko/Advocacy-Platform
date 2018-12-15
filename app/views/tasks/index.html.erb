@@ -23,8 +23,7 @@
                 <p id="points" style="font-size: medium"> Points: <%= t.points %><p/>
                 <p id="description" style="font-size: medium;"><%= t.description %><p/>
                 <!--<p style="font-size: medium"> Image: <%= image_tag(t.image_url(:thumb).to_s) %></p>-->
-                <div class="card-action white" id="view-task">
-                  <p style="color: white"> <%= link_to('See More', task_path(t)) %></p>
+                <div class="card-action" id="view-task"><button class = "btn waves-effect waves-light white"><%= link_to('See More', task_path(t)) %></button>
 
               </div>
               </div>
