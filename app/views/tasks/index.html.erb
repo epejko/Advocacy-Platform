@@ -12,8 +12,8 @@
     <div class="container" id="index-title">
       <% if @tasks %>
       <div class="row" id="all-tasks">
-      <div class="col"></div>
-      <div class="col">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
         <% @tasks.each do |t| %>
             <div class="card large red darken-1"  id="single-task">
               <div class="card-content white-text">
@@ -31,10 +31,9 @@
         <% end %>
       <% end %>
       </div>
-      < class="col"> <footer class="fixed-bottom"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a></footer></div>
+      <div class="col-lg-4"> <footer class="align-content-lg-end;fixed-bottom"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a></footer></div>
       </div>
     </div>
-
 
       <script type="text/css" src="../../../public/materialize.min.js"></script>
 
