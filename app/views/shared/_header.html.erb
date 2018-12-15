@@ -26,11 +26,10 @@
     <% if user_signed_in? %>
 
       <li class="nav-item"><%= link_to('Profile', user_path(current_user), :class => 'nav-link', :style => "font-size:15px; color:white") %></li>
-      <li class="nav-item"><a class="nav-link" style="font-size:15px; color:white" href="/tasks/new">Add a Task</a></li>
       <% if current_user.admin? %>
         <li class="nav-item"><a class="nav-link" style="font-size:15px; color:white" href="/admin">Admin</a></li>
       <% end %>
-      <li class="nav-item"><%= link_to('Log Out', logout_path, :class => 'nav-link', :style => "text-align: center;border: none; background: transparent;font-size:15px; color:white") %></li>
+      <li class="nav-item; left"><%= link_to('Log Out', logout_path, :class => 'nav-link', :style => "text-align: center;border: none; background: transparent;font-size:15px; color:white") %></li>
     <% else %>
       <li class="nav-item"><a class="nav-link" style="font-size:15px; color: white" href="/google-login">Login with Google</a></li>
       <!--- <li class="nav-item"><a class="nav-link" style="font-size:15px; color:white" href="/users/new">Sign Up</a></li> --->
