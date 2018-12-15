@@ -22,7 +22,7 @@
                 <p id="category" style="font-size: medium"><%= t.category %><p/>
                 <p id="points" style="font-size: medium"> Points: <%= t.points %><p/>
                 <p id="description" style="font-size: medium;"><%= t.description %><p/>
-                <p style="font-size: medium"> Image: <%= image_tag(t.image_url(:thumb).to_s) %></p>
+                <!--<p style="font-size: medium"> Image: <%= image_tag(t.image_url(:thumb).to_s) %></p>-->
                 <div class="card-action" style="color: white" id="view-task">
                 <%= link_to('See More', task_path(t)) %>
               </div>
