@@ -9,7 +9,9 @@
     <div class="alert alert-<%= key %>"><%= value %></div>
 <% end %>
 
+<div class="jumbotron" id="edit-full">
 <% if !@user.username %>
+    <div class="container" id="intro-box">
     <h1>Hi, <%= @user.first_name %></h1>
     <p>To finish signing up, choose a username</p>
     <%= form_for @user do |u| %>
@@ -20,7 +22,9 @@
         
         <%= u.submit "Submit" %>
     <% end %>
+    </div>
 <% else %>
+    <div class="container" id="edit-box">
     <h1><%= @user.first_name %> <%= @user.last_name%></h1>
     <%= form_for @user do |u| %>
     
@@ -36,6 +40,8 @@
     <% end %>
     
     <%= link_to "Delete Account", user_path(@user), method: :delete,  data: { confirm: "Are you sure? This will also delete all assocaiated tasks." } %>
+    </div>
 <% end %>
+</div>
 </body>
 </html>
