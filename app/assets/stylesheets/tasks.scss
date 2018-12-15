@@ -13,15 +13,16 @@
 }
 
 #all-tasks {
+    z-index: -1;
 }
-#bottom-left
-{
-    left: 0;
-    bottom: 0;
-    position: absolute;
+
+#bottom-left {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    right: 0px;
 }
 #single-task {
-    height: 200px;
+    height: 170px;
     width: 550px;
     border: 1px solid grey;
     margin-bottom: 50px;
@@ -30,4 +31,37 @@
 
 #user {
     margin:0px;
+}
+
+#list {
+    margin-top: 5px;
+}
+
+#submit-title {
+    padding-top: 20px;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+#new-full {
+    position: relative;
+    align-content: center;
+    background-color: white;
+}
+
+#form-box {
+    margin-top: 30px;
+    padding: 10px 10px;
+    align-content: center;
+    width: 600px;
+    border: 1px solid black;
+}
+
+label{
+    font-size: 20px;
+}
+
+#submit-button {
+    text-align: center;
 }

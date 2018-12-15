@@ -23,7 +23,9 @@
             <div>
                 <div id="user"> </div>
                 <h3><%= link_to 'View all tasks', root_path %></h3>
-                <h3><%= link_to 'Delete', task_path(@task), method: :delete %></h3>
+                <% if current_user && current_user.username == @task.author %>
+                    <h3><%= link_to 'Delete', task_path(@task), method: :delete %></h3>
+                <% end %>
             </div>
         </div>
         

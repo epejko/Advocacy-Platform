@@ -3,6 +3,11 @@ class TasksController < ApplicationController
     def index
         @tasks = Task.all.reverse
         @users = User.all
+        @tasks.each do |t|
+            if t.updated_at 
+                t.show_time = t.updated_at.strftime("%d %B, %Y")
+            end
+        end
     end
     
     def new
@@ -40,7 +45,7 @@ class TasksController < ApplicationController
     
     private 
     def task_params
-        params.require(:task).permit(:subject, :category, :points, :author, :user_id, :description, :image)
+        params.require(:task).permit(:subject, :category, :points, :author, :user_id, :description, :image, :created_at, :updated_at)
     end
     
 end
