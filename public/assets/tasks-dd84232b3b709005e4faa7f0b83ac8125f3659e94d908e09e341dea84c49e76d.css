@@ -1,0 +1,36 @@
+/* line 1, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/tasks.scss */
+#index-title {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 75px;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+/* line 10, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/tasks.scss */
+#index-title h3 {
+  font-family: Roboto;
+  font-size: 40px;
+}
+
+/* line 17, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/tasks.scss */
+#bottom-left {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+/* line 23, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/tasks.scss */
+#single-task {
+  height: 200px;
+  width: 550px;
+  border: 1px solid grey;
+  margin-bottom: 50px;
+  padding: 0px;
+}
+
+/* line 31, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/tasks.scss */
+#user {
+  margin: 0px;
+}

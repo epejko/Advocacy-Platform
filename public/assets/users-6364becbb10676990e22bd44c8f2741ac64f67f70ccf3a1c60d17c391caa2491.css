@@ -1,0 +1,34 @@
+/* line 4, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/users.scss */
+#user-title {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 75px;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+/* line 13, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/users.scss */
+#user-title h2 {
+  font-size: 40px;
+}
+
+/* line 17, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/users.scss */
+#user-table {
+  margin-top: 0px;
+  margin-left: 400px;
+  border-left: 1px solid black;
+  width: 500px;
+}
+
+/* line 25, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/users.scss */
+#task-table {
+  margin-left: 400px;
+  margin-top: 20px;
+  border-left: 1px solid black;
+}
+
+/* line 31, /Users/mattfein/RubymineProjects/Advocacy-Platform-final/app/assets/stylesheets/users.scss */
+#task-table h3 {
+  font-size: 35px;
+}
