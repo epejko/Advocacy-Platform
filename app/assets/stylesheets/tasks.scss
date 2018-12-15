@@ -14,7 +14,12 @@
 
 #all-tasks {
 }
-
+#bottom-left
+{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
 #single-task {
     height: 200px;
     width: 550px;
