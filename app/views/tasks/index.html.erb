@@ -15,7 +15,7 @@
       <div class="col-lg-4"></div>
       <div class="col-lg-4">
         <% @tasks.each do |t| %>
-            <div class="card large red darken-1"  id="single-task">
+            <div class="card large red darken-1" style="height: 275px; width: 300px;" id="single-task">
               <div class="card-content white-text">
                 <span class="card-title" style="font-size: large" id="user"><i> <%= t.author %></i></span>
                 <p id="subject" style="font-size: medium"><%= t.subject %><p/>
@@ -23,7 +23,7 @@
                 <p id="points" style="font-size: medium"> Points: <%= t.points %><p/>
                 <p id="description" style="font-size: medium;"><%= t.description %><p/>
                 <!--<p style="font-size: medium"> Image: <%= image_tag(t.image_url(:thumb).to_s) %></p>-->
-                <div class="card-action" style="color: white" id="view-task">
+                <div class="card-action; white-text" id="view-task">
                 <%= link_to('See More', task_path(t)) %>
               </div>
               </div>
