@@ -36,8 +36,16 @@ Given(/^I am on the front page$/) do
   visit root_path
 end
 
+Given(/^I am on the edit tasks page$/) do
+  visit '/tasks/new'
+end
+
 When(/^I press Learn$/) do
   click_on 'Learn'
+end
+
+When(/^I submit taskt$/) do
+  click_on 'Submit Task'
 end
 
 Then(/^I should be on the Learn page$/) do
@@ -50,4 +58,8 @@ end
 
 Then(/^I should be on the View Task page$/) do
   visit '/tasks/(.*)'
+end
+
+Then(/^I should be on the home page$/) do
+  visit root_path
 end
