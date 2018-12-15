@@ -12,8 +12,8 @@
     <div class="container" id="index-title">
       <% if @tasks %>
       <div class="row" id="all-tasks">
-      <div class="col"></div>
-      <div class="col">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
         <% @tasks.each do |t| %>
             <div class="card large light-blue" style="height: 225px; width: 500px;" id="single-task">
               <div class="card-content white-text">
@@ -31,7 +31,7 @@
         <% end %>
       <% end %>
       </div>
-    <div class="col"></div>
+    <div class="col-lg-3"></div>
       </div>
       </div>
     <div class="container" id="bottom-left">
