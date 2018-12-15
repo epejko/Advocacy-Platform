@@ -3,30 +3,52 @@
         <title>
            Submit a Report
         </title>
+        
+        <%= stylesheet_link_tag "tasks", media: "all", "data-turbolinks-track" => "reload" %>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
     </head>
     <body>
-        <h1>Submit a Report</h1>
-        <%= form_for Task.new do |t| %>
-        
-            <%= t.hidden_field :author, value: current_user.username %>
-            <%= t.hidden_field :user_id, value: current_user.id %>
-            
-            <%= t.label :subject, "Subject" %>
-            <%= t.text_field :subject %>
-            
-            <%= t.label :category, "Category" %>
-            <%= t.select :category, Options['Categories'] %>
-            
-            <%= t.label :points, "Points" %>
-            <%= t.select :points, ((1..10).map {|i| [i,i] }) %>
-            
-            <%= t.label :description, "Description" %>
-            <%= t.text_field :description %>
-            
-            <!--<%= t.label :image %><br>-->
-            <!--<%= t.file_field :image %>-->
-            
-            <%= t.submit "Submit Task" %>
-        <% end %>
+        <div class="jumbotron" id="new-full">
+            <div class="container" id="submit-title">
+                <h1>Submit a Report</h1>
+            </div>
+            <div class="container" id="form-box">
+                <%= form_for Task.new do |t| %>
+                
+                    <div class="container" id="form field">
+                    <%= t.hidden_field :author, value: current_user.username %>
+                    <%= t.hidden_field :user_id, value: current_user.id %>
+                    </div>
+                    
+                    <div class="container" id="form field">
+                    <%= t.label :subject, "Subject" %>
+                    <%= t.text_field :subject %>
+                    </div>
+                    
+                    <div class="container" id="form field">
+                    <%= t.label :category, "Category" %>
+                    <%= t.select :category, Options['Categories'] %>
+                    </div>
+                    
+                    <div class="container" id="form field">
+                    <%= t.label :points, "Points" %>
+                    <%= t.select :points, ((1..10).map {|i| [i,i] }) %>
+                    </div>
+                    
+                    <div class="container" id="form field">
+                    <%= t.label :description, "Description" %>
+                    <%= t.text_field :description %>
+                    </div>
+                    
+                    <!--<%= t.label :image %><br>-->
+                    <!--<%= t.file_field :image %>-->
+                    
+                    <div class="container" id="submit-button">
+                    <%= t.submit "Submit Task" %>
+                    </div>
+                <% end %>
+            </div>
+        </div>
     </body>
 </html>
