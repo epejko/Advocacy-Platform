@@ -11,18 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181212203528) do
+ActiveRecord::Schema.define(version: 20181215142648) do
 
   create_table "tasks", force: :cascade do |t|
-    t.string  "subject"
-    t.string  "category"
-    t.integer "points"
-    t.integer "user_id"
-    t.string  "description"
-    t.string  "image"
-    t.string  "filename"
-    t.string  "content_type"
-    t.binary  "file_contents"
+    t.string   "subject"
+    t.string   "category"
+    t.integer  "points"
+    t.string   "author"
+    t.integer  "user_id"
+    t.string   "description"
+    t.string   "image"
+    t.string   "filename"
+    t.string   "content_type"
+    t.binary   "file_contents"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "show_time"
   end
 
   add_index "tasks", ["user_id"], name: "index_tasks_on_user_id"
@@ -34,15 +38,22 @@ ActiveRecord::Schema.define(version: 20181212203528) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "picture"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
     t.string   "username"
     t.integer  "pointtotal"
-    t.boolean  "admin",      default: false
+    t.boolean  "confirmable",            default: false
+    t.string   "encrypted_password",     default: "",    null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.boolean  "admin",                  default: false
   end
 
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["provider", "uid"], name: "index_users_on_provider_and_uid", unique: true
   add_index "users", ["provider"], name: "index_users_on_provider"
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   add_index "users", ["uid"], name: "index_users_on_uid"
   add_index "users", ["username"], name: "index_users_on_username", unique: true
 
