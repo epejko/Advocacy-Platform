@@ -15,7 +15,7 @@
       <div class="col"></div>
       <div class="col">
         <% @tasks.each do |t| %>
-            <div class="card large blue-darken-4" style="height: 225px; width: 500px;" id="single-task">
+            <div class="card large light-blue" style="height: 225px; width: 500px;" id="single-task">
               <div class="card-content white-text">
                 <span class="card-title" style="font-size: 25px" id="user"><i><b><%= t.author %></b></i></span>
                 <p id="subject" style="font-size: medium"><%= t.subject %><p/>
@@ -23,7 +23,7 @@
                 <p id="points" style="font-size: medium"> Points: <%= t.points %><p/>
                 <p id="description" style="font-size: medium;"><%= t.description %><p/>
                 <!--<p style="font-size: medium"> Image: <%= image_tag(t.image_url(:thumb).to_s) %></p>-->
-                <div class="card-action" id="view-task">
+                <div class="card-action white" id="view-task">
                   <p style="color: white"> <%= link_to('See More', task_path(t)) %></p>
 
               </div>
@@ -38,7 +38,7 @@
     <div class="container">
       <div col="col"></div>
       <div class="col"></div>
-      <div class="col"> <footer class="fixed-action-btn" id="bottom-left"><a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a></footer></div></div>
+      <div class="col"> <footer class="fixed-action-btn" id="bottom-left"><a class="btn-floating btn-large waves-effect waves light-blue darken-4"><i class="material-icons">add</i></a></footer></div></div>
 
       <script type="text/css" src="../../../public/materialize.min.js"></script>
 
