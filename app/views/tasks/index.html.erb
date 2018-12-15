@@ -23,9 +23,9 @@
                 <p id="category" style="font-size: medium"><%= t.category %><p/>
                 <p id="points" style="font-size: medium"> Points: <%= t.points %><p/>
                 <!--<p style="font-size: medium"> Image: <%= image_tag(t.image_url(:thumb).to_s) %></p>-->
-                <div class="card-action" id="view-task"><button class = "btn waves-effect waves-light white"><%= link_to('See More', task_path(t)) %></button>
+                <button class = "btn waves-effect waves-light white"  id="view-task"><%= link_to('See More', task_path(t)) %></button>
 
-              </div>
+             
               </div>
             </div>
         <% end %>
@@ -33,7 +33,7 @@
       </div>
     <div class="col"></div>
       </div>
-    </div>
+      </div>
     <div class="container" id="bottom-left">
       <div class="fixed-action-btn">
         <a href="/tasks/new" class="btn-floating btn-large waves-effect waves light-blue darken-4"><i class="material-icons">add</i></a>
