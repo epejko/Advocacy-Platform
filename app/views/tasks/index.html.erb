@@ -22,11 +22,10 @@
                 <p id="category" style="font-size: medium"><%= t.category %><p/>
                 <p id="points" style="font-size: medium"> Points: <%= t.points %><p/>
                 <p id="description" style="font-size: medium;"><%= t.description %><p/>
-                <div class="right-align"><img src="https://www.google.com/search?q=green+wave+helmet&safe=off&rlz=1C5CHFA_enUS705US705&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjcyJ3mkqHfAhXuna0KHW7bAm4Q_AUIDygC&biw=1280&bih=690&dpr=2#imgrc=ocrgOtaNxelTlM:"></div>
                 <!--<p style="font-size: medium"> Image: <%= image_tag(t.image_url(:thumb).to_s) %></p>-->
-                <div class="card-action" id="view-task"><button class = "btn waves-effect waves-light white"><%= link_to('See More', task_path(t)) %></button>
+                <button class = "btn waves-effect waves-light white"  id="view-task"><%= link_to('See More', task_path(t)) %></button>
 
-              </div>
+             
               </div>
             </div>
         <% end %>
