@@ -8,13 +8,18 @@
 }
 
 #index-title h3 {
-    font-family: Helvetica;
-    font-size: 75px;
+    font-family: Roboto;
+    font-size: 40px;
 }
 
 #all-tasks {
 }
-
+#bottom-left
+{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
 #single-task {
     height: 170px;
     width: 550px;
@@ -24,8 +29,6 @@
 }
 
 #user {
-    background-color: #d7dadb;
-    padding-top: 5px;
     margin:0px;
 }
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181205202850) do
+ActiveRecord::Schema.define(version: 20181212203528) do
 
   create_table "tasks", force: :cascade do |t|
     t.string  "subject"
@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 20181205202850) do
     t.integer "user_id"
     t.string  "description"
     t.string  "image"
+    t.string  "filename"
+    t.string  "content_type"
+    t.binary  "file_contents"
   end
 
   add_index "tasks", ["user_id"], name: "index_tasks_on_user_id"
