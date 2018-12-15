@@ -15,11 +15,11 @@
 #all-tasks {
     z-index: -1;
 }
-#bottom-left
-{
-    left: 0;
-    bottom: 0;
-    position: absolute;
+
+#bottom-left {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    right: 0px;
 }
 #single-task {
     height: 170px;

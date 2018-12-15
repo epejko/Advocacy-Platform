@@ -1,0 +1,81 @@
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#index-title {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 75px;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#index-title h3 {
+  font-family: Roboto;
+  font-size: 40px;
+}
+
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#all-tasks {
+  z-index: -1;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#bottom-left {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  right: 0px;
+}
+
+/* line 24, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#single-task {
+  height: 170px;
+  width: 550px;
+  border: 1px solid grey;
+  margin-bottom: 50px;
+  padding: 0px;
+}
+
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#user {
+  margin: 0px;
+}
+
+/* line 36, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#list {
+  margin-top: 5px;
+}
+
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#submit-title {
+  padding-top: 20px;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#new-full {
+  position: relative;
+  align-content: center;
+  background-color: white;
+}
+
+/* line 53, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#form-box {
+  margin-top: 30px;
+  padding: 10px 10px;
+  align-content: center;
+  width: 600px;
+  border: 1px solid black;
+}
+
+/* line 61, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+label {
+  font-size: 20px;
+}
+
+/* line 65, /home/ubuntu/workspace/app/assets/stylesheets/tasks.scss */
+#submit-button {
+  text-align: center;
+}
